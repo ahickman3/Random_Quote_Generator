@@ -1,0 +1,168 @@
+body, html{
+    height: 100%;
+}
+.quoteBtn,
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg{
+	position: relative; /*set position and relative because buttons kept fading as well*/
+	z-index: -1;
+    background-image: url("http://i.imgur.com/sxwO4y3.jpg");
+    height: 100%;
+    background-size: 70% 100%;
+}
+
+.jumbotron{
+    margin-left: 16.66666667%;
+    margin-top: -78vh; 
+    background-color: rgba(100, 100, 100, 0.4);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+h2, h3{
+    color: white;
+    opacity: 1;
+    font-weight: 900;
+
+}
+
+h2{
+    margin-top: -3vh;
+    margin-left: -1.7vw;
+}
+
+h3{
+    float: right;
+}
+
+.btnPosit{
+	margin-top: -40vh;
+}
+
+.quoteBtn {
+    border-color: #5e1111 #5e1111 hsl(0, 69%, 17%);
+    background-image: url("Images/quoteBtn.jpg");
+    background-position: 50% 60%;
+    height: 45px;
+    width: 140px;    
+}
+
+.twitBtn{
+    height: 45px;
+    width: 155px;
+    margin-right: 35px;
+}
+
+#whole-text{
+    font-weight: 800;
+    color: #BC1818;
+    font-size: 22px;
+}
+
+.btn.quoteBtn:focus,
+.btn.quoteBtn:active:focus,
+.btn.quoteBtn.active:focus,
+.btn.quoteBtn.focus,
+.btn.quoteBtn:active.focus,
+.btn.quoteBtn.active.focus,
+.btn.twitBtn:focus,
+.btn.twitBtn:active:focus,
+.btn.twitBtn.active:focus,
+.btn.twitBtn.focus,
+.btn.twitBtn:active.focus,
+.btn.twitBtn.active.focus{
+    outline-color: none;
+    outline-style: none;
+    border-color: #5e1111 #5e1111 hsl(0, 69%, 17%);
+}
+
+.btn.quoteBtn:hover{
+    border-style: none;
+}
+
+.btn.quoteBtn:active{
+    background-image: url("Images/quoteBtn.jpg");
+    opacity: .8;
+}
+
+
+
+
+@media only screen and (max-height: 568px){
+    .jumbotron{
+        margin-top:-89vh;
+    }
+
+    .btnPosit {
+        margin-top: -40vh;
+    }
+}
+
+@media only screen and (min-height: 569px){
+    .jumbotron{
+        margin-top:-80vh;
+    }
+
+    .btnPosit {
+        margin-top: -40vh;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1199px){
+    .bg{
+        background-position: center;
+    }
+}
+
+/*medium*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) { 
+    .jumbotron{
+        margin-left: 8.33333333%;
+    }
+
+}
+
+/*small*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .jumbotron{
+        margin-left: 4.15%;
+    }
+
+}
+
+/*xs*/
+@media only screen and (min-width: 461px) and (max-width: 767px){
+    .jumbotron{
+        margin-left: 8.33333333%;
+    }
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 460px) {
+    h2{
+        font-size: 22px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    .jumbotron{
+        margin-left: 8%;
+    }
+
+    .twitBtn{
+        margin-right: 55px;
+        width: auto;
+    }
+
+    #twitText{
+        display: none;
+    }
+}
