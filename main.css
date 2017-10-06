@@ -45,7 +45,8 @@ h3{
 
 .quoteBtn {
     border-color: #5e1111 #5e1111 hsl(0, 69%, 17%);
-    background-image: url("Images/quoteBtn.jpg");
+    /*background-image: url("Images/quoteBtn.jpg");*/
+    background-image: url(http://u.cubeupload.com/fullmetal7777/quoteBtn.jpg);
     background-position: 50% 60%;
     height: 45px;
     width: 140px;    
